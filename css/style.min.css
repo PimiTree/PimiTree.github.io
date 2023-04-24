@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -16,8 +23,12 @@ header nav {
 
 .menu {
   z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 13px 70px;
   list-style: none;
@@ -77,9 +88,12 @@ header nav {
 .subheader_btn {
   width: 100%;
   height: 46px;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background-image: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   margin-top: 19px;
   color: #fff;
@@ -129,9 +143,12 @@ header nav {
   margin: 118px auto 0 auto;
   width: 259px;
   height: 63px;
-  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
+  background-image: -o-linear-gradient(bottom, #1eacc7 0%, #4ce2ff 100%);
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
   color: #fff;
@@ -149,13 +166,21 @@ header nav {
   padding: 70px 0 65px 0;
 }
 .reasons_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
 }
 .reasons_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 10px 25px 15px 35px;
   width: 113px;
   height: 113px;
@@ -251,13 +276,21 @@ header nav {
   text-transform: uppercase;
 }
 .mobile_item_plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   bottom: 35px;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   width: 26px;
   height: 26px;
   background-color: #000;
@@ -281,7 +314,11 @@ header nav {
   background-color: #1eacc7;
   position: absolute;
   left: 50%;
-  transform: translatex(-50%);
+  -webkit-transform: translatex(-50%);
+      -ms-transform: translatex(-50%);
+          transform: translatex(-50%);
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 .mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
@@ -391,8 +428,12 @@ header nav {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 148px;
   padding: 14px 23px 39px 23px;
 }
@@ -400,17 +441,31 @@ footer > div {
   width: 33%;
 }
 footer > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 footer .footer_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 100%;
@@ -428,8 +483,11 @@ footer .footer_divider {
   margin: 0 auto;
 }
 footer .footer_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 footer .footer_menu a {
   font-size: 15px;
@@ -440,8 +498,12 @@ footer .footer_menu a {
   margin-top: 30px;
 }
 footer .footer_service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 footer .footer_service a {
   font-size: 11px;
@@ -452,8 +514,12 @@ footer .footer_service a {
   margin-top: 15px;
 }
 footer .footer_lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer .footer_lang a {
   font-size: 11px;
@@ -481,7 +547,9 @@ footer .footer_app_links img {
     font-size: 50px;
   }
   .reasons_item {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .reasons_icon {
     margin: 0 20px 0 0;
@@ -490,18 +558,27 @@ footer .footer_app_links img {
     width: 300px;
   }
   footer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer > div {
     width: 35%;
     margin: 15px auto 0 auto;
   }
   footer > div:nth-child(1) {
-    order: 3;
-    justify-content: center;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   footer > div:nth-child(3) {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .mobile_item {
     width: 239px;
@@ -512,13 +589,19 @@ footer .footer_app_links img {
     height: 68px;
   }
   header nav .menu .menu_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header nav .menu .menu_link {
     text-align: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
     padding: 0px 8px;
   }
@@ -555,8 +638,13 @@ footer .footer_app_links img {
     font-size: 37px;
   }
   .reasons_item {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .reasons_icon {
     margin: 0 0 15px 0;
@@ -606,15 +694,24 @@ footer .footer_app_links img {
 @media (max-width: 767px) {
   .menu {
     position: fixed;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     top: 0px;
     left: -100%;
     width: 50%;
     height: 100vh;
     padding: 20px 15px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
   }
   .menu_active {
@@ -630,7 +727,9 @@ footer .footer_app_links img {
     position: absolute;
     right: 10px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     width: 26px;
     height: 12px;
   }
@@ -640,19 +739,25 @@ footer .footer_app_links img {
     width: 100%;
     background-color: #fff;
     margin-bottom: 3px;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
     transition: 0.5s all;
   }
   .hamburger_active span {
     margin-bottom: -2px;
   }
   .hamburger_active span:nth-child(1) {
-    transform: translateY(3px) rotate(-45deg);
+    -webkit-transform: translateY(3px) rotate(-45deg);
+        -ms-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
   }
   .hamburger_active span:nth-child(2) {
     display: none;
   }
   .hamburger_active span:nth-child(3) {
-    transform: translateY(3px) rotate(45deg);
+    -webkit-transform: translateY(3px) rotate(45deg);
+        -ms-transform: translateY(3px) rotate(45deg);
+            transform: translateY(3px) rotate(45deg);
   }
   .xs-hidden {
     display: none;
@@ -717,10 +822,14 @@ footer .footer_app_links img {
     margin-bottom: -2px;
   }
   header nav .hamburger_active span:nth-child(1) {
-    transform: translateY(5px) rotate(-45deg);
+    -webkit-transform: translateY(5px) rotate(-45deg);
+        -ms-transform: translateY(5px) rotate(-45deg);
+            transform: translateY(5px) rotate(-45deg);
   }
   header nav .hamburger_active span:nth-child(3) {
-    transform: translateY(5px) rotate(45deg);
+    -webkit-transform: translateY(5px) rotate(45deg);
+        -ms-transform: translateY(5px) rotate(45deg);
+            transform: translateY(5px) rotate(45deg);
   }
   .subheader {
     top: 30px;
